@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    /* background-color:skyblue; */
+}
+
+img{
+    max-width: 100%;
+    /* max-width: 700px; */
+}
+
+div#container{
+    width:100%;
+    height:auto;
+    
+    border: 2px solid black;
+    background-color: ;
+    text-align: center;
+}
+
+header{
+    width: inherit;
+    height: 80px;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+section{
+    background-color: skyblue;
+    max-width: 900px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    font-weight: 200;
+    font-family: 'Comforter Brush', sans-serif;
+}
+
+.menu{
+    width:inherit;
+    height: 300px;
+    overflow: hidden;
+    background-color: lightgray;
+    text-align: center;
+    color:yellow;
+    margin: 20px 10px;
+    /* transition: background-color 3s, box-shadow 2s; */
+       /* transition control background or box shadow color duration */
+    transition: all 0.7s;
+    font-weight: 200;
+}
+
+.menu:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: lightgreen;
+    cursor:pointer;
+}
+
+.menu img{
+    height: 200px;
+ 
+}
+
+@media screen and (min-width : 700px){
+    section{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+    }
+    .menu{
+        width: 30%;
+    }
+
+}
