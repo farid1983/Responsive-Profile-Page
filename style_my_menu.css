@@ -23,9 +23,8 @@ div#container{
     text-align: center;
 }
 
-header{
- 
-    width: 100%;
+header{ 
+    max-width: 900px;
     height: 80px;
     /* background-color: lightgreen; */
     display: flex;
@@ -35,7 +34,9 @@ header{
     padding: 0 20px;
     font-family: 'Nunito', sans-serif;
     font-size:10px;
-}
+    margin-left: auto;
+    margin-right: auto;
+    }
 
 section{
     /* background-color: skyblue; */
